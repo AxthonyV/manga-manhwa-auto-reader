@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="128" height="128" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+        </linearGradient>
+        <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#4facfe;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#00f2fe;stop-opacity:1" />
+        </linearGradient>
+    </defs>
+    
+    <circle cx="64" cy="64" r="62" fill="url(#grad1)" stroke="url(#grad2)" stroke-width="1"/>
+    
+    <rect x="32" y="38.4" width="64" height="51.2" rx="2" fill="white" opacity="0.9"/>
+    <rect x="35.84" y="43.52" width="56.32" height="40.96" rx="1" fill="url(#grad2)" opacity="0.8"/>
+    
+    <rect x="42.24" y="51.2" width="43.52" height="1" fill="white" opacity="0.7"/>
+    <rect x="42.24" y="57.6" width="35.84" height="1" fill="white" opacity="0.7"/>
+    <rect x="42.24" y="64" width="39.68" height="1" fill="white" opacity="0.7"/>
+    
+    <circle cx="64" cy="89.6" r="7.68" fill="url(#grad2)" opacity="0.9"/>
+</svg>

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manhwa Smart Reader</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div class="popup-container">
+        <header class="popup-header">
+            <div class="header-content">
+                <h1 data-i18n="title">📖 Manhwa Smart Reader</h1>
+                <p class="subtitle" data-i18n="subtitle">Smart automatic reading</p>
+            </div>
+            <div class="status-indicator" id="status-indicator">
+                <span class="status-dot"></span>
+                <span class="status-text" data-i18n="status.inactive">Inactive</span>
+            </div>
+        </header>
+
+        <!-- Sección de idioma -->
+        <section class="language-section">
+            <h3 class="language-title" data-i18n="language.title">🌐 Language</h3>
+            <div class="language-selector">
+                <button class="lang-btn active" data-lang="en" title="English">🇺🇸</button>
+                <button class="lang-btn" data-lang="es" title="Español">🇪🇸</button>
+            </div>
+            <p class="language-desc" data-i18n="language.desc">Choose your language</p>
+        </section>
+
+        <!-- Selector de estilo visual -->
+        <div class="theme-style-section">
+            <label for="theme-style-select" class="theme-style-label" data-i18n="theme.label">Visual Style:</label>
+            <div class="theme-style-options">
+                <label class="theme-style-option">
+                    <input type="radio" name="theme-style" value="futurista" id="theme-futurista">
+                    <span class="theme-style-thumb theme-futurista-thumb"></span>
+                    <span class="theme-style-name" data-i18n="theme.futuristic">Futuristic</span>
+                </label>
+                <label class="theme-style-option">
+                    <input type="radio" name="theme-style" value="dark" id="theme-dark">
+                    <span class="theme-style-thumb theme-dark-thumb"></span>
+                    <span class="theme-style-name" data-i18n="theme.dark">Dark Mode</span>
+                </label>
+                <label class="theme-style-option">
+                    <input type="radio" name="theme-style" value="clasico" id="theme-clasico">
+                    <span class="theme-style-thumb theme-clasico-thumb"></span>
+                    <span class="theme-style-name" data-i18n="theme.classic">Classic</span>
+                </label>
+            </div>
+        </div>
+
+        <main class="popup-main">
+            <!-- Controles principales -->
+            <section class="control-section">
+                <h3 data-i18n="controls.title">🎮 Controls</h3>
+                <div class="control-buttons">
+                    <button class="control-btn primary" id="start-btn">
+                        <span class="btn-icon">▶️</span>
+                        <span class="btn-text" data-i18n="controls.start">Start</span>
+                    </button>
+                    <button class="control-btn secondary" id="pause-btn" disabled>
+                        <span class="btn-icon">⏸️</span>
+                        <span class="btn-text" data-i18n="controls.pause">Pause</span>
+                    </button>
+                    <button class="control-btn danger" id="stop-btn" disabled>
+                        <span class="btn-icon">⏹️</span>
+                        <span class="btn-text" data-i18n="controls.stop">Stop</span>
+                    </button>
+                </div>
+            </section>
+
+            <!-- Configuración de velocidad -->
+            <section class="config-section">
+                <h3 data-i18n="speed.title">⚡ Reading Speed</h3>
+                <div class="speed-config">
+                    <div class="speed-option">
+                        <input type="radio" id="speed-fast" name="speed" value="fast" checked>
+                        <label for="speed-fast">
+                            <span class="speed-icon">🚀</span>
+                            <span class="speed-label" data-i18n="speed.pro">Pro</span>
+                            <span class="speed-desc" data-i18n="speed.proDesc">Professional reading</span>
+                        </label>
+                    </div>
+                    <div class="speed-option">
+                        <input type="radio" id="speed-custom" name="speed" value="custom">
+                        <label for="speed-custom">
+                            <span class="speed-icon">🎚️</span>
+                            <span class="speed-label" data-i18n="speed.custom">Custom</span>
+                            <span class="speed-desc" data-i18n="speed.customDesc">Personalized speed</span>
+                        </label>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Control de velocidad personalizado -->
+            <section class="config-section">
+                <h3 data-i18n="customSpeed.title">🎚️ Custom Speed</h3>
+                <div class="custom-speed-config">
+                    <label for="custom-scroll-size" class="custom-scroll-label" data-i18n="customSpeed.scrollSize">Scroll size:</label>
+                    <input type="range" id="custom-scroll-size" min="80" max="400" step="10" value="180" disabled>
+                    <div class="custom-scroll-value">
+                        <span id="custom-scroll-size-value">180</span> px
+                    </div>
+                    <input type="range" id="custom-speed" min="500" max="5000" step="100" value="2000" disabled>
+                    <div class="custom-speed-labels">
+                        <span data-i18n="customSpeed.veryFast">Very fast</span>
+                        <span data-i18n="customSpeed.fast">Fast</span>
+                        <span data-i18n="customSpeed.normal">Normal</span>
+                        <span data-i18n="customSpeed.slow">Slow</span>
+                        <span data-i18n="customSpeed.verySlow">Very slow</span>
+                    </div>
+                    <div class="custom-speed-value">
+                        <span id="custom-speed-value">2000</span> <span data-i18n="customSpeed.msPerScroll">ms per scroll</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Configuraciones avanzadas -->
+            <section class="config-section">
+                <h3 data-i18n="advanced.title">🔧 Advanced Settings</h3>
+                <div class="advanced-config">
+                    <div class="config-item">
+                        <label class="switch">
+                            <input type="checkbox" id="auto-detect" checked>
+                            <span class="slider"></span>
+                        </label>
+                        <div class="config-text">
+                            <span class="config-label" data-i18n="advanced.autoDetect">Auto detection</span>
+                            <span class="config-desc" data-i18n="advanced.autoDetectDesc">Analyze content automatically</span>
+                        </div>
+                    </div>
+                    
+                    <div class="config-item">
+                        <label class="switch">
+                            <input type="checkbox" id="smooth-scroll" checked>
+                            <span class="slider"></span>
+                        </label>
+                        <div class="config-text">
+                            <span class="config-label" data-i18n="advanced.smoothScroll">Smooth scroll</span>
+                            <span class="config-desc" data-i18n="advanced.smoothScrollDesc">Fluid transitions</span>
+                        </div>
+                    </div>
+                    
+                    <div class="config-item">
+                        <label class="switch">
+                            <input type="checkbox" id="smart-pause">
+                            <span class="slider"></span>
+                        </label>
+                        <div class="config-text">
+                            <span class="config-label" data-i18n="advanced.smartPause">Smart pause</span>
+                            <span class="config-desc" data-i18n="advanced.smartPauseDesc">Pause on long dialogues</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Estadísticas -->
+            <section class="stats-section">
+                <h3 data-i18n="stats.title">📊 Reading Statistics</h3>
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <div class="stat-value" id="reading-time">0m</div>
+                        <div class="stat-label" data-i18n="stats.totalTime">Total time</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Información de la página actual -->
+            <section class="page-info-section">
+                <h3 data-i18n="pageInfo.title">📄 Page Information</h3>
+                <div class="page-info">
+                    <div class="info-row">
+                        <span class="info-label" data-i18n="pageInfo.imagesDetected">Images detected:</span>
+                        <span class="info-value" id="current-images">0</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label" data-i18n="pageInfo.complexity">Complexity:</span>
+                        <span class="info-value" id="current-complexity">0%</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label" data-i18n="pageInfo.estimatedTime">Estimated time:</span>
+                        <span class="info-value" id="estimated-time">0s</span>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="popup-footer">
+            <div class="shortcuts">
+                <span class="shortcut-text" data-i18n="shortcuts.ctrlSpace">Shortcut: Ctrl + Space</span>
+            </div>
+            <div class="version">
+                <span>v1.0.0</span>
+            </div>
+        </footer>
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+</html> 

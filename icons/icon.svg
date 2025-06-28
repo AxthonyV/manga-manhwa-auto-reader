@@ -1,0 +1,45 @@
+<svg width="128" height="128" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4facfe;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00f2fe;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Fondo circular con gradiente -->
+  <circle cx="64" cy="64" r="60" fill="url(#grad1)" stroke="url(#grad2)" stroke-width="4"/>
+  
+  <!-- Libro/Manhwa -->
+  <rect x="32" y="40" width="64" height="48" rx="4" fill="white" opacity="0.9"/>
+  
+  <!-- Páginas del libro -->
+  <rect x="36" y="44" width="56" height="40" rx="2" fill="url(#grad2)" opacity="0.8"/>
+  
+  <!-- Líneas de texto simuladas -->
+  <rect x="42" y="52" width="44" height="2" fill="white" opacity="0.7"/>
+  <rect x="42" y="58" width="36" height="2" fill="white" opacity="0.7"/>
+  <rect x="42" y="64" width="40" height="2" fill="white" opacity="0.7"/>
+  <rect x="42" y="70" width="32" height="2" fill="white" opacity="0.7"/>
+  
+  <!-- Imagen/arte en el libro -->
+  <rect x="42" y="78" width="44" height="4" fill="white" opacity="0.6"/>
+  
+  <!-- Icono de lectura -->
+  <circle cx="64" cy="88" r="8" fill="url(#grad2)" opacity="0.9"/>
+  <path d="M 60 88 L 68 88 M 64 84 L 64 92" stroke="white" stroke-width="2" stroke-linecap="round"/>
+  
+  <!-- Partículas de lectura -->
+  <circle cx="48" cy="32" r="2" fill="white" opacity="0.6">
+    <animate attributeName="opacity" values="0.6;1;0.6" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="80" cy="28" r="1.5" fill="white" opacity="0.8">
+    <animate attributeName="opacity" values="0.8;1;0.8" dur="1.5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="88" cy="48" r="1" fill="white" opacity="0.7">
+    <animate attributeName="opacity" values="0.7;1;0.7" dur="2.5s" repeatCount="indefinite"/>
+  </circle>
+</svg> 
