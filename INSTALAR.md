@@ -1,4 +1,4 @@
-# �� Instalación Rápida / Quick Install – Manga & Manhwa Auto Reader
+# Instalación Rápida / Quick Install – Manga & Manhwa Auto Reader
 
 ---
 
