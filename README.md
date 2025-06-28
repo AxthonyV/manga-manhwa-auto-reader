@@ -8,9 +8,9 @@ Transform your manhwa or manga reading sessions with intelligent auto-scroll tec
 
 ## 🎬 Demo
 
-[![Watch the demo](https://img.youtube.com/vi/pjYiH4sVnro/0.jpg)](https://youtu.be/pjYiH4sVnro)
+![Demo GIF](review/review.gif)
 
-> See the extension in action! Interface, features, and real usage example: [Watch on YouTube](https://youtu.be/pjYiH4sVnro)
+> See the extension in action! Interface, features, and real usage example.
 
 ## ✨ What Makes This Extension Special
 
