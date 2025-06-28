@@ -1,6 +1,6 @@
 # 📖 Manga & Manhwa Auto Reader
 
-**Smart browser extension for automatic, adaptive reading of manhwa or manga.**
+**A modern, smart browser extension for automatic, adaptive reading of manhwa and manga.**
 
 > **Works on Chrome, Brave, Edge, Opera, Vivaldi, and any Chromium-based browser.**
 
@@ -14,27 +14,37 @@
 
 ## 🚀 Installation
 
-**Please read [INSTALL.md](INSTALL.md) for step-by-step instructions in English and Spanish.**
+👉 **See [INSTALL.md](INSTALL.md) for step-by-step instructions in English and Spanish.**
 
 ---
 
 ## ✨ Features
 
-- **Intelligent Auto-Scroll:** Adaptive speed and scroll size
-- **Customizable:** Adjust speed (ms) and scroll size (px)
-- **Pro Mode:** Fast, professional reading
-- **Multi-language:** English & Spanish
-- **Modern UI:** Futuristic, Dark, and Classic themes
-- **Statistics:** Track your reading time
-- **Multiplatform:** Chrome, Brave, Edge, Opera, Vivaldi, etc.
+- 🧠 **Intelligent Auto-Scroll:** Adaptive speed and scroll size
+- 🎚️ **Customizable:** Adjust speed (ms) and scroll size (px)
+- ⚡ **Pro Mode:** Fast, professional reading
+- 🌍 **Multi-language:** English & Spanish
+- 🎨 **Modern UI:** Futuristic, Dark, and Classic themes
+- ⏱️ **Statistics:** Track your reading time
+- 🖥️ **Multiplatform:** Chrome, Brave, Edge, Opera, Vivaldi, etc.
 
 ---
 
-## 📝 About
+## 💡 Why use this extension?
 
-- For manhwa & manga lovers who want a professional, customizable reading experience.
-- Created by [AxthonyV](https://github.com/AxthonyV)
+- For passionate manhwa & manga readers who want a smarter, more beautiful, and fully customizable experience.
+- Save time, enjoy the art, and focus on your story — let the extension do the scrolling for you!
+- Designed for comfort, speed, and style.
 
 ---
 
-**See INSTALL.md for installation and usage instructions in English and Spanish.** 
+## ❤️ About
+
+Made with much love and dedication for all manhwa & manga fans around the world.  
+_Read more, scroll less, and enjoy every panel._
+
+**Created by [AxthonyV](https://github.com/AxthonyV)**
+
+---
+
+✨ _Happy reading!_ ✨ 
