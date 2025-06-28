@@ -8,7 +8,7 @@ Transform your manhwa or manga reading sessions with intelligent auto-scroll tec
 
 ## 🎬 Demo
 
-![Demo GIF](review/review.gif)
+![Demo GIF](review/reviewdemo.gif)
 
 > See the extension in action! Interface, features, and real usage example.
 
