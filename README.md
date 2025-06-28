@@ -6,6 +6,12 @@ Transform your manhwa or manga reading sessions with intelligent auto-scroll tec
 
 > **Works on Chrome, Brave, Edge, Opera, Vivaldi, and any Chromium-based browser.**
 
+## 🎬 Demo
+
+> See the extension in action! Interface, features, and real usage example:
+
+<video src="review/review.mp4" controls width="100%" style="max-width:480px; border-radius:12px; box-shadow:0 4px 24px #0003; margin:16px 0;">Your browser does not support the video tag.</video>
+
 ## ✨ What Makes This Extension Special
 
 - **🧠 Intelligent Auto-Scroll**: Adapts speed and scroll size based on your preferences
